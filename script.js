@@ -44,7 +44,7 @@ checkoutButton.addEventListener('click', () => {
   })
   totalHolder.innerHTML = `<h3>The total cost of your smoothie is $${total}.</h3>`
   console.log(ingredientList)
-  if (ingredientList.includes("avocado") && ingredientList.includes("coconut") && ingredientList.includes("milk")) {
+  if (ingredientList.includes("avocado") && ingredientList.includes("coconut") && ingredientList.includes("milk") && ingredientList.length == 3) {
     console.log("has it all")
     totalHolder.innerHTML += `<h3> Congrats! You've ordered my favorite smoothie.</h3>`
   }
