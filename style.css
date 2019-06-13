@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap');
+
+body {
+    background-color: #ecf9ea
+}
+#wrapper {
+    
+    width: 400px;
+    margin: auto;
+}
+
+#nav {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#c68585;
+    margin: -10px;
+}
+
+.topping {
+    text-align: center;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2em;
+}
+
+.order {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order .topping {
+    margin: 10px;
+    padding: 8px;
+}
+
+.avocado {
+    background-color: #9fcc94;  
+}
+
+.mango {
+    background-color:#f9c32f;
+}
+
+.coconut {
+    background-color: #efebe1;
+}
+
+.banana {
+    background-color: #fffa70;
+ 
+}
+
+.milk {
+    background-color: #848484;
+    order: 5;
+}
+
+.water {
+    background-color:#2a50c1;
+    order: 6;
+}
+
+
+
+#total {
+    text-align: center;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 1em;
+}
+
+.button {
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.8em;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 900;
+    border-radius: 20px;
+    background-color: #c68585;
+    color: white;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    color: #c68585;
+    text-align: center;
+}
