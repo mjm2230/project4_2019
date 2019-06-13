@@ -11,7 +11,6 @@ const removeIngredient = (div) => {
   console.log(ingredId)
   const element = document.getElementById(ingredId)
   element.remove()
-  counter ++
 }
 
 //listens for a click in each nav button
@@ -20,6 +19,7 @@ const removeIngredient = (div) => {
 navButtons.forEach(navButton => {
   navButton.addEventListener('click', () => {
     orderDiv.innerHTML += `<div id="${counter}" class="topping ${navButton.dataset.ingredient}" data-ingredient=${navButton.dataset.ingredient} data-price=${navButton.dataset.price}> ${navButton.dataset.ingredient}</div>`
+    counter ++
     const toppingButtons=document.querySelectorAll(".order .topping")
      toppingButtons.forEach(toppingButton => {
       toppingButton.addEventListener('click', (e) => {
