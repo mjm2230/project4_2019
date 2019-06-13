@@ -36,11 +36,18 @@ navButtons.forEach(navButton => {
 
 checkoutButton.addEventListener('click', () => {
   let total = 0
+  ingredientList = []
   const toppings = document.querySelectorAll('.order .topping ')
   toppings.forEach(topping => {
+      ingredientList.push(topping.dataset.ingredient)
       total += Number(topping.dataset.price)
   })
   totalHolder.innerHTML = `<h3>The total cost of your smoothie is $${total}.</h3>`
+  console.log(ingredientList)
+  if (ingredientList.includes("avocado") && ingredientList.includes("coconut") && ingredientList.includes("milk")) {
+    console.log("has it all")
+    totalHolder.innerHTML += `<h3> Congrats! You've ordered my favorite smoothie.</h3>`
+  }
 })
 
 
